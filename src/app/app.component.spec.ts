@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'FarmaFE'`, () => {
+  it(`should have as title 'Ghost-Maps'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('FarmaFE');
+    expect(app.title).toEqual('Ghost-Maps');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('FarmaFE app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Ghost-Maps app is running!');
   });
 });
